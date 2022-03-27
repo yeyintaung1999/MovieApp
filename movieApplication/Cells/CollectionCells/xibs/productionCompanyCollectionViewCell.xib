@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="productionCompanyCollectionViewCell" customModule="movieApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-Fe-gmq">
+                        <rect key="frame" x="0.0" y="0.0" width="254" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTION COMPANY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lqh-GY-zI2">
+                                <rect key="frame" x="0.0" y="100.5" width="254" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-FS-RFS">
+                                <rect key="frame" x="0.0" y="0.0" width="254" height="215"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Lqh-GY-zI2" firstAttribute="centerY" secondItem="FPl-Fe-gmq" secondAttribute="centerY" id="8O1-5s-o0N"/>
+                            <constraint firstAttribute="bottom" secondItem="RdA-FS-RFS" secondAttribute="bottom" id="97O-jg-fAI"/>
+                            <constraint firstItem="RdA-FS-RFS" firstAttribute="leading" secondItem="FPl-Fe-gmq" secondAttribute="leading" id="Bmy-hc-YvG"/>
+                            <constraint firstItem="Lqh-GY-zI2" firstAttribute="centerX" secondItem="FPl-Fe-gmq" secondAttribute="centerX" id="YsX-LX-n4I"/>
+                            <constraint firstItem="RdA-FS-RFS" firstAttribute="top" secondItem="FPl-Fe-gmq" secondAttribute="top" id="a2j-dY-8Cn"/>
+                            <constraint firstAttribute="trailing" secondItem="Lqh-GY-zI2" secondAttribute="trailing" id="cBm-Gw-jrv"/>
+                            <constraint firstItem="Lqh-GY-zI2" firstAttribute="leading" secondItem="FPl-Fe-gmq" secondAttribute="leading" id="hLi-ag-kii"/>
+                            <constraint firstAttribute="trailing" secondItem="RdA-FS-RFS" secondAttribute="trailing" id="hlf-7W-2FL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="FPl-Fe-gmq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5GB-pg-s1y"/>
+                <constraint firstItem="FPl-Fe-gmq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ABb-82-rCa"/>
+                <constraint firstAttribute="trailing" secondItem="FPl-Fe-gmq" secondAttribute="trailing" id="Ei1-z1-fEc"/>
+                <constraint firstAttribute="bottom" secondItem="FPl-Fe-gmq" secondAttribute="bottom" id="VbQ-Wc-Uc3"/>
+            </constraints>
+            <size key="customSize" width="254" height="215"/>
+            <connections>
+                <outlet property="backDropImage" destination="RdA-FS-RFS" id="DUB-vX-NOS"/>
+                <outlet property="productionName" destination="Lqh-GY-zI2" id="sdr-7J-ESB"/>
+            </connections>
+            <point key="canvasLocation" x="155" y="40"/>
+        </collectionViewCell>
+    </objects>
+</document>

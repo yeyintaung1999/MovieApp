@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="ShowTimeTableViewCell" customModule="movieApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tR-RO-kTH">
+                        <rect key="frame" x="30" y="16" width="352" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Movie Showtimes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j0-xs-owC">
+                                <rect key="frame" x="20" y="10" width="176" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEE MORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ag-PH-UCv">
+                                <rect key="frame" x="20" y="64" width="67" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showtimesicon" translatesAutoresizingMaskIntoConstraints="NO" id="2PN-ux-TdP">
+                                <rect key="frame" x="272" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Bwx-92-LoL"/>
+                                    <constraint firstAttribute="height" constant="50" id="pRQ-Jo-vs4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="showtimeBackground"/>
+                        <constraints>
+                            <constraint firstItem="2PN-ux-TdP" firstAttribute="centerY" secondItem="5tR-RO-kTH" secondAttribute="centerY" id="5tP-bY-Hwl"/>
+                            <constraint firstAttribute="trailing" secondItem="2PN-ux-TdP" secondAttribute="trailing" constant="30" id="KYs-VD-4Us"/>
+                            <constraint firstItem="4j0-xs-owC" firstAttribute="width" secondItem="5tR-RO-kTH" secondAttribute="width" multiplier="0.5" id="Up4-Kr-7PO"/>
+                            <constraint firstItem="4j0-xs-owC" firstAttribute="top" secondItem="5tR-RO-kTH" secondAttribute="top" constant="10" id="Voe-MI-Tv2"/>
+                            <constraint firstItem="4j0-xs-owC" firstAttribute="leading" secondItem="5tR-RO-kTH" secondAttribute="leading" constant="20" id="bBg-Sw-pBS"/>
+                            <constraint firstItem="0ag-PH-UCv" firstAttribute="leading" secondItem="5tR-RO-kTH" secondAttribute="leading" constant="20" id="evl-5x-k1M"/>
+                            <constraint firstAttribute="height" constant="100" id="h2g-3g-0rK"/>
+                            <constraint firstAttribute="bottom" secondItem="0ag-PH-UCv" secondAttribute="bottom" constant="20" id="nbd-Zi-HRE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="primaryColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="5tR-RO-kTH" secondAttribute="bottom" constant="5" id="5Vi-EN-g5G"/>
+                    <constraint firstItem="5tR-RO-kTH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Ftr-Ef-3Ht"/>
+                    <constraint firstItem="5tR-RO-kTH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HOH-9K-oV2"/>
+                    <constraint firstItem="5tR-RO-kTH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="O6a-Y9-dF0"/>
+                    <constraint firstItem="5tR-RO-kTH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ktA-Vr-JYW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5tR-RO-kTH" secondAttribute="trailing" constant="10" id="vI4-DO-QBT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.078083850440000005" green="0.10721693190000001" blue="0.1432872415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="seemoreLabel" destination="0ag-PH-UCv" id="6rf-Kk-bdP"/>
+                <outlet property="showtimeView" destination="5tR-RO-kTH" id="G7p-NV-sm3"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="-69.977678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="showtimesicon" width="170.66667175292969" height="170.66667175292969"/>
+        <namedColor name="primaryColor">
+            <color red="0.078083850440000005" green="0.10721693190000001" blue="0.1432872415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="showtimeBackground">
+            <color red="0.1130385473" green="0.14782455559999999" blue="0.2014970183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

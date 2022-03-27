@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularFimlCollectionViewCell" customModule="movieApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="229"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="229"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="darkknightrises" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-zX-Nl3">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="hgo-uX-zUs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Knight Rises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hff-Oz-4mP">
+                        <rect key="frame" x="0.0" y="175" width="93" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrR-Bq-vn5">
+                        <rect key="frame" x="0.0" y="193.5" width="17" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpY-j2-PUF" customClass="RatingControl" customModule="movieApplication" customModuleProvider="target">
+                        <rect key="frame" x="22" y="195.5" width="50" height="10"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="buttonsize">
+                                <size key="value" width="10" height="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starcount">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="primaryColor"/>
+            <constraints>
+                <constraint firstItem="Hff-Oz-4mP" firstAttribute="top" secondItem="xDh-zX-Nl3" secondAttribute="bottom" constant="5" id="5tE-XS-pfQ"/>
+                <constraint firstItem="xDh-zX-Nl3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cmq-XT-7hH"/>
+                <constraint firstAttribute="trailing" secondItem="xDh-zX-Nl3" secondAttribute="trailing" id="Cst-JQ-VKS"/>
+                <constraint firstItem="WrR-Bq-vn5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Goj-sE-WYn"/>
+                <constraint firstItem="KpY-j2-PUF" firstAttribute="leading" secondItem="WrR-Bq-vn5" secondAttribute="trailing" constant="5" id="OgD-4y-E34"/>
+                <constraint firstItem="xDh-zX-Nl3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WEP-XT-p4B"/>
+                <constraint firstItem="Hff-Oz-4mP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="giW-Ld-6Xp"/>
+                <constraint firstItem="KpY-j2-PUF" firstAttribute="centerY" secondItem="WrR-Bq-vn5" secondAttribute="centerY" id="hRn-Sp-ygW"/>
+                <constraint firstItem="WrR-Bq-vn5" firstAttribute="top" secondItem="Hff-Oz-4mP" secondAttribute="bottom" constant="5" id="zeR-ZW-H79"/>
+            </constraints>
+            <size key="customSize" width="206" height="229"/>
+            <connections>
+                <outlet property="backdropImage" destination="xDh-zX-Nl3" id="YI7-SO-Ssn"/>
+                <outlet property="ratingLabel" destination="WrR-Bq-vn5" id="COl-0X-y8P"/>
+                <outlet property="ratingStackView" destination="KpY-j2-PUF" id="iiE-jc-fng"/>
+                <outlet property="title" destination="Hff-Oz-4mP" id="zEY-vo-I5L"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="-12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="darkknightrises" width="266.66665649414062" height="333.33334350585938"/>
+        <namedColor name="primaryColor">
+            <color red="0.078000001609325409" green="0.10700000077486038" blue="0.14300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

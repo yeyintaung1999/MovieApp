@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SliderCollectionViewCell" customModule="movieApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="244"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="harrypotterposter" translatesAutoresizingMaskIntoConstraints="NO" id="3bT-bj-mj7">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="244"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hr5-84-1PM">
+                        <rect key="frame" x="115" y="97.5" width="50" height="49"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="S1V-ft-N46"/>
+                            <constraint firstAttribute="height" constant="50" id="tjX-lq-2CH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch Full Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4n-SM-77g">
+                        <rect key="frame" x="10" y="195" width="189" height="29"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="i4n-SM-77g" secondAttribute="bottom" constant="20" id="078-Wf-yyh"/>
+                <constraint firstItem="3bT-bj-mj7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="34W-Hf-GCN"/>
+                <constraint firstItem="i4n-SM-77g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="8HI-a2-nsQ"/>
+                <constraint firstItem="hr5-84-1PM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Av5-OJ-9SU"/>
+                <constraint firstItem="3bT-bj-mj7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IXZ-Fe-fna"/>
+                <constraint firstAttribute="trailing" secondItem="3bT-bj-mj7" secondAttribute="trailing" id="QgP-wy-Fk3"/>
+                <constraint firstItem="hr5-84-1PM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mOc-Gu-da6"/>
+                <constraint firstAttribute="bottom" secondItem="3bT-bj-mj7" secondAttribute="bottom" id="scW-PO-uYw"/>
+            </constraints>
+            <size key="customSize" width="280" height="244"/>
+            <connections>
+                <outlet property="sliderBackImage" destination="3bT-bj-mj7" id="Zdt-85-kIe"/>
+                <outlet property="sliderLabel" destination="i4n-SM-77g" id="Tla-Tn-zSM"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="48.883928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="harrypotterposter" width="98.666664123535156" height="150"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

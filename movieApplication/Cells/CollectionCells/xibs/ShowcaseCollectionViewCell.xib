@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShowcaseCollectionViewCell" customModule="movieApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mebeforeyou" translatesAutoresizingMaskIntoConstraints="NO" id="Ht9-BT-wlG">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="0Wp-1a-WDi"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xjf-tm-Dxy">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jYl-lb-sW7">
+                                <rect key="frame" x="156" y="85.5" width="30" height="29"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eiO-PC-ji5"/>
+                                    <constraint firstAttribute="width" constant="30" id="uqx-d8-TKN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me Before You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SW-NK-fDp">
+                                <rect key="frame" x="10" y="154" width="105" height="18.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 May 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dI-dn-htc">
+                                <rect key="frame" x="10" y="172.5" width="83" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5292740373421978" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6dI-dn-htc" secondAttribute="bottom" constant="10" id="3I7-7T-lJw"/>
+                            <constraint firstItem="5SW-NK-fDp" firstAttribute="leading" secondItem="Xjf-tm-Dxy" secondAttribute="leading" constant="10" id="76s-np-MKr"/>
+                            <constraint firstItem="6dI-dn-htc" firstAttribute="top" secondItem="5SW-NK-fDp" secondAttribute="bottom" id="IPF-H9-njN"/>
+                            <constraint firstItem="6dI-dn-htc" firstAttribute="leading" secondItem="Xjf-tm-Dxy" secondAttribute="leading" constant="10" id="Ong-s5-QkI"/>
+                            <constraint firstItem="jYl-lb-sW7" firstAttribute="centerY" secondItem="Xjf-tm-Dxy" secondAttribute="centerY" id="U6F-8h-a06"/>
+                            <constraint firstItem="jYl-lb-sW7" firstAttribute="centerX" secondItem="Xjf-tm-Dxy" secondAttribute="centerX" id="g8E-3h-TlG"/>
+                            <constraint firstAttribute="height" constant="200" id="hBh-lW-kpg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xjf-tm-Dxy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4pa-pe-Sxp"/>
+                <constraint firstAttribute="trailing" secondItem="Ht9-BT-wlG" secondAttribute="trailing" id="D4Y-JE-l33"/>
+                <constraint firstItem="Ht9-BT-wlG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Edf-m6-WJT"/>
+                <constraint firstAttribute="trailing" secondItem="Xjf-tm-Dxy" secondAttribute="trailing" id="Iyz-Zx-ClF"/>
+                <constraint firstItem="Ht9-BT-wlG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X22-e9-DgY"/>
+                <constraint firstItem="Xjf-tm-Dxy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yUe-T3-JTc"/>
+            </constraints>
+            <size key="customSize" width="342" height="198"/>
+            <connections>
+                <outlet property="backdrop" destination="Ht9-BT-wlG" id="vTB-io-DvC"/>
+                <outlet property="moviename" destination="5SW-NK-fDp" id="9cl-3k-afz"/>
+                <outlet property="releaseDate" destination="6dI-dn-htc" id="p2u-bJ-PKW"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="38"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mebeforeyou" width="640" height="360"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
